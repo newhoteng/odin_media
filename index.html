@@ -6,27 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/058c29e44e.css" crossorigin="anonymous"> -->
 </head>
 <body>
     <header class = "header">
-        <nav class = "nav child">
-            NAV
-        </nav>
+        <div class = "logo-container">
+            <i class="material-symbols-rounded">menu</i>
+            <div class="logo">
+                <div class="logo-img">
+                    <img src="images/youtube-logo-2431.png" alt="">
+                </div>
+                <h1 id="logo-txt">YouTube</h1>
+            </div>       
+        </div>
+
+        <div class = "search-container">
+            <div class = search-and-mic>
+            <form action="">
+                <input type = "text" placeholder="Search">
+            </form>
+            <button class = "search"><i class="material-symbols-outlined">search</i></button>
+            </div>
+            <div class = "mic"><i class="material-symbols-outlined">mic</i></div>    
+        </div>
+        <div class="profile-container">
+            <i class = "ri-video-add-line"></i>
+            <i class = "material-symbols-outlined">video_call</i>
+            <i class="material-symbols-rounded">notifications</i>
+            <div class="profile-box">
+                <img src="images/cat-g812969634_1920.jpg" alt="">
+            </div>
+        </div>
     </header>
     <main class = "main">
-        <section class = "video child">
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/ly36kn0ug4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </section>
-
-        <section class = "thumbnails child">
         
-        </section>
-
-        <section class = "comments child">
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/LPnDCTqW7zw" title="Chris Brown - Under The Influence (Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            COMMENTS
-            
-        </section>
     </main>
 </body>
 </html>
