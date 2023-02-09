@@ -102,6 +102,7 @@ img {
     padding: 12px;
     font-size: 1rem;
     border: none;
+    outline: none;
 }
 
 .search {
