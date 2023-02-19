@@ -163,15 +163,16 @@ img {
 /* main section */
 
 .main {
-    margin-top: 60px;
+    margin-top: 58px;
     padding: 25px;
     display: flex;
+    justify-content: center;
     /*flex-wrap: wrap; media query */
     /*height: calc(100vh - 60px);*/
 }
 
 .player-section {
-    width: calc(200% / 3);
+    /*width: calc(200% / 3);*/
     min-width: 640px;
     display: flex;
     flex-direction: column;
@@ -188,22 +189,25 @@ img {
 }
 
 .video-description {
-  background: rgb(235, 235, 235);
+  background: rgb(240, 240, 240);
   margin-top: 10px;
   border-radius: 10px;
   padding: 10px;
   line-height: 20px;
+  margin-top: 12px;
 }
 
 .owner {
   display: flex;
   align-items: center;
-  border: 1px solid goldenrod;
+  /*border: 1px solid goldenrod;*/
+  margin: 12px 12px 0 0;
+  min-width: calc(50% - 6px);
 }
 
 .profile {
   display: flex;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   align-items: center;
 }
 
@@ -247,7 +251,7 @@ img {
 }
 
 .name-subscribers {
-  border: 1px solid brown;
+  /*border: 1px solid brown;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -284,9 +288,12 @@ img {
 }
 
 .actions {
-  border: 1px solid blueviolet;
+  /*border: 1px solid blueviolet;*/
   display: flex;
   gap: 8px;
+  margin-top: 12px;
+  min-width: calc(50% - 6px);
+  justify-content: flex-end;
 }
 
 .video-attributes {
@@ -300,9 +307,10 @@ img {
 
 .video-options {
   /*border: 1px solid red;*/
-  /*border: 1px solid blue;*/
-  width: calc(100% / 3);
-  min-width: 300px;
+  border: 1px solid blue;
+  /*width: calc(100% / 3);*/
+  width: 402px;
+  min-width: 330px;
   display: flex;
   flex-direction: column;
   margin: 0 20px;
@@ -310,8 +318,9 @@ img {
 
 .side-pic {
   position: relative;
-  width: 200px;
-  aspect-ratio: 16 / 9;
+  width: 168px;
+  height: 94px;
+  /*aspect-ratio: 16 / 9;*/
   border-radius: 10px;
   overflow: hidden;
   z-index: -1;
