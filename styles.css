@@ -113,6 +113,7 @@ img {
     justify-content: center;
     outline: none;
     border: none;
+    background-color: #aaa;
     /*z-index: 20;*/
 }
 
@@ -163,11 +164,13 @@ img {
     margin-top: 60px;
     padding: 25px;
     display: flex;
+    /*flex-wrap: wrap; media query */
     /*height: calc(100vh - 60px);*/
 }
 
 .player-section {
     width: calc(200% / 3);
+    min-width: 640px;
     display: flex;
     flex-direction: column;
 }
@@ -187,11 +190,112 @@ img {
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
+    line-height: 20px;
 }
 
+.owner {
+  display: flex;
+  align-items: center;
+  border: 1px solid goldenrod;
+}
+
+.profile {
+  display: flex;
+  border: 1px solid green;
+  align-items: center;
+}
+
+.profile .pic {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.checkname {
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  
+}
+
+.check {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(96, 96, 96);
+  color: white;
+  background-color: rgb(96, 96, 96);
+  margin-left: 4px;
+}
+
+.num-subscribers {
+  font-size: 12px;
+  color: rgb(96, 96, 96);
+}
+
+.name-subscribers {
+  border: 1px solid brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+/* download button */
+.button {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 16px;
+  gap: 6px;
+  border-radius: 18px;
+  border: none;
+}
+
+.thumbs {
+  display: flex;
+}
+
+.thumbs-left {
+  border-radius: 18px 0 0 18px;
+}
+
+.thumbs-right {
+  border-radius: 0 18px 18px 0;
+  border-left: 1px solid rgb(200, 200, 200);
+}
+
+.dots {
+  width: 36px;
+  justify-content: center;
+}
+
+.actions {
+  border: 1px solid blueviolet;
+  display: flex;
+  gap: 8px;
+}
+
+.video-attributes {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* video-options*/
+
 .video-options {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: calc(100% / 3);
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     margin: 0 20px;
@@ -205,3 +309,6 @@ img {
     overflow: hidden;
     z-index: -1;
 }
+
+
+
