@@ -5,6 +5,7 @@
     margin: 0;
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
+    color: rgb(15, 15, 15)
 }
 
 
@@ -113,7 +114,8 @@ img {
     justify-content: center;
     outline: none;
     border: none;
-    background-color: #aaa;
+    border-left: 1px solid rgb(211, 211, 211);
+    background-color: rgb(248, 248, 248);
     /*z-index: 20;*/
 }
 
@@ -133,7 +135,7 @@ img {
     width: 100%;
     display: flex;
     align-items: center;
-    border: 1px solid gray;
+    border: 1px solid rgb(211, 211, 211);
     border-radius: 20px;
     overflow: hidden;
 
@@ -176,21 +178,21 @@ img {
 }
 
 .video {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    flex-grow: 1;    
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  flex-grow: 1;    
 }
 
 .video-title {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .video-description {
-    background: rgb(235, 235, 235);
-    margin-top: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    line-height: 20px;
+  background: rgb(235, 235, 235);
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 20px;
 }
 
 .owner {
@@ -230,9 +232,13 @@ img {
   align-items: center;
   justify-content: center;
   border: 1px solid rgb(96, 96, 96);
-  color: white;
   background-color: rgb(96, 96, 96);
+  color: white;
   margin-left: 4px;
+}
+
+#tick {
+  color: white;
 }
 
 .num-subscribers {
@@ -248,7 +254,7 @@ img {
   margin-right: 24px;
 }
 
-/* download button */
+/* buttons */
 .button {
   display: flex;
   align-items: center;
@@ -269,7 +275,7 @@ img {
 
 .thumbs-right {
   border-radius: 0 18px 18px 0;
-  border-left: 1px solid rgb(200, 200, 200);
+  border-left: 1px solid rgb(240, 240, 240);
 }
 
 .dots {
@@ -293,22 +299,66 @@ img {
 /* video-options*/
 
 .video-options {
-    /*border: 1px solid red;*/
-    width: calc(100% / 3);
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
+  /*border: 1px solid red;*/
+  /*border: 1px solid blue;*/
+  width: calc(100% / 3);
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
 }
 
 .side-pic {
-    position: relative;
-    width: 200px;
-    aspect-ratio: 16 / 9;
-    border-radius: 10px;
-    overflow: hidden;
-    z-index: -1;
+  position: relative;
+  width: 200px;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: -1;
 }
 
+.dot {
+  background-color: rgb(96, 96, 96);
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+}
 
+.day {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.views {
+  display: flex;
+  gap: 4px;
+}
+
+.but {
+  background: rgb(240, 240, 240);
+  padding: 3px 4px;
+}
+
+.side-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  gap: 8px;
+}
+
+.side-text h4 {
+  margin-bottom: 4px;
+  line-height: 20px;
+  max-height: 40px;
+}
+
+.video-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
