@@ -1,89 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(15, 15, 15)
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+    
+}
+
+html {
+  color: rgb(15, 15, 15)
 }
 
 
 h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
-/*h4 {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    color: #aaa;
-    margin-left: 20px;
-}*/
-
 i {
-    font-size: 1.5rem; 
+  font-size: 1.5rem; 
 }
 
 p, a {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 hr {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 12px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 12px 0;
 }
 
 /* header style */
 header {
-    background: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 25px; 
-    padding-right: 40px;  
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 25px; 
+  padding-right: 40px;  
 }
 
 .logo-img {
-    position: relative;
-    height: 40px;
-    width: 40px;
-    /*border: 1px solid black;*/
+  position: relative;
+  height: 40px;
+  width: 40px;
 }
 
 img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #logo-txt {
-    letter-spacing: -1.5px;
-    margin-left: 5px;
-    /*border: 1px solid green;*/
+  letter-spacing: -1.5px;
+  margin-left: 5px;
 }
 
 .logo {
-    /*border: 1px solid blue;*/
-    display: flex;
-    align-items: center;
-    margin-left: 25px;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
 }
 
 .logo-container {
-    /*border: 1px solid red;*/
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .search-container {
-    /*border: 1px solid red;*/
     display: flex;
     align-items: center;
     margin-left: 40px;
@@ -96,86 +88,79 @@ img {
 }
 
 .search-container input {
-    display: flex;
-    height: 40px;
-    align-items: center;
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border: none;
-    outline: none;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
 }
 
 .search {
-    min-width: 60px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
-    border: none;
-    border-left: 1px solid rgb(211, 211, 211);
-    background-color: rgb(248, 248, 248);
-    /*z-index: 20;*/
+  min-width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-left: 1px solid rgb(211, 211, 211);
+  background-color: rgb(248, 248, 248);
 }
 
 .mic {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    outline: none;
-    border: none;
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-and-mic {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border: 1px solid rgb(211, 211, 211);
-    border-radius: 20px;
-    overflow: hidden;
-
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(211, 211, 211);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .profile-container {
-    display: flex;
-    align-items: center;
-    /*border: 1px solid red;*/
+  display: flex;
+  align-items: center;
 }
 
 .profile-container i {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .profile-box {
-    position: relative;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-left: 25px;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 25px;
 }
 
 /* main section */
-
 .main {
-    margin-top: 58px;
-    padding: 25px;
-    display: flex;
-    justify-content: center;
-    /*flex-wrap: wrap; media query */
-    /*height: calc(100vh - 60px);*/
+  margin-top: 58px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .player-section {
-    /*width: calc(200% / 3);*/
-    min-width: 640px;
-    display: flex;
-    flex-direction: column;
+  min-width: 640px;
+  display: flex;
+  flex-direction: column;
 }
 
 .video {
@@ -200,14 +185,12 @@ img {
 .owner {
   display: flex;
   align-items: center;
-  /*border: 1px solid goldenrod;*/
   margin: 12px 12px 0 0;
   min-width: calc(50% - 6px);
 }
 
 .profile {
   display: flex;
-  /*border: 1px solid green;*/
   align-items: center;
 }
 
@@ -223,8 +206,6 @@ img {
 .checkname {
   display: flex;
   align-items: center;
-  /*justify-content: space-between;*/
-  
 }
 
 .check {
@@ -241,17 +222,12 @@ img {
   margin-left: 4px;
 }
 
-#tick {
-  color: white;
-}
-
 .num-subscribers {
   font-size: 12px;
   color: rgb(96, 96, 96);
 }
 
 .name-subscribers {
-  /*border: 1px solid brown;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,7 +264,6 @@ img {
 }
 
 .actions {
-  /*border: 1px solid blueviolet;*/
   display: flex;
   gap: 8px;
   margin-top: 12px;
@@ -306,9 +281,6 @@ img {
 /* video-options*/
 
 .video-options {
-  /*border: 1px solid red;*/
-  border: 1px solid blue;
-  /*width: calc(100% / 3);*/
   width: 402px;
   min-width: 330px;
   display: flex;
@@ -320,7 +292,6 @@ img {
   position: relative;
   width: 168px;
   height: 94px;
-  /*aspect-ratio: 16 / 9;*/
   border-radius: 10px;
   overflow: hidden;
   z-index: -1;
